@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
-    /* ===== RESET ===== */
     * {
       margin: 0;
       padding: 0;
@@ -20,18 +19,16 @@
         linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
         url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
       background-size: cover;
-      background-attachment: fixed;
       background-position: center;
+      background-attachment: fixed;
     }
 
-    /* ===== CONTAINER ===== */
     .container {
       max-width: 1400px;
       margin: auto;
       padding: 30px;
     }
 
-    /* ===== GLASS CARD ===== */
     .card {
       background: rgba(255,255,255,0.65);
       backdrop-filter: blur(10px);
@@ -41,7 +38,6 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
-    /* ===== HEADER ===== */
     header {
       text-align: center;
       padding: 50px 20px;
@@ -79,7 +75,6 @@
       font-size: 14px;
     }
 
-    /* ===== SECTION TITLES ===== */
     h3 {
       margin-bottom: 12px;
       padding-bottom: 6px;
@@ -87,10 +82,9 @@
       color: #0f172a;
     }
 
-    /* ===== GRID LAYOUT ===== */
     .grid {
       display: grid;
-      grid-template-columns: 1fr 2fr; /* desktop split */
+      grid-template-columns: 1fr 2fr;
       gap: 24px;
     }
 
@@ -103,9 +97,8 @@
       line-height: 1.6;
     }
 
-    /* ===== RESPONSIVE (MOBILE) ===== */
+    /* ===== MOBILE ===== */
     @media (max-width: 768px) {
-
       body {
         background-attachment: scroll;
       }
@@ -137,21 +130,12 @@
         margin: 8px 0;
       }
 
-      /* 🔑 MAIN RESPONSIVE SWITCH */
       .grid {
-        grid-template-columns: 1fr; /* single column */
+        grid-template-columns: 1fr;
       }
 
       .card {
         padding: 18px;
-      }
-
-      h3 {
-        font-size: 18px;
-      }
-
-      ul li {
-        font-size: 15px;
       }
     }
   </style>
@@ -162,12 +146,12 @@
   <!-- HEADER -->
   <header class="card container">
     <h1>Vinayak Madhukar Kadam</h1>
-    <h2>BIM Engineer – Structural</h2>
-    <p>📞 9370441367 | ✉️ vinayak.mk@outlook.com</p>
+    <h2>BIM Engineer | Structural • Precast • Infrastructure</h2>
+    <p>📞 9370441367 | 📧 vinayak.mk@outlook.com</p>
 
     <div class="header-links">
-      <a href="https://drive.google.com/" target="_blank">See Portfolio</a>
-      <a href="https://www.linkedin.com/" target="_blank">See LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view" target="_blank">See Portfolio</a>
+      <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">See LinkedIn</a>
     </div>
   </header>
 
@@ -179,7 +163,7 @@
       <p>
         Motivated and detail-oriented BIM Engineer with experience in Structural,
         MEP, and Precast BIM modeling. Skilled in delivering accurate 3D BIM models,
-        coordinated drawings, and ISO-compliant documentation for infrastructure
+        coordinated drawings, and ISO 19650 compliant documentation for infrastructure
         and building projects.
       </p>
     </section>
@@ -187,37 +171,65 @@
     <!-- SKILLS + EXPERIENCE -->
     <section class="grid">
 
-      <!-- LEFT COLUMN -->
+      <!-- LEFT -->
       <div>
         <div class="card">
           <h3>Software Skills</h3>
           <ul>
-            <li>Autodesk Revit (Structure)</li>
+            <li>Autodesk Revit (Structure & BIM)</li>
             <li>AutoCAD</li>
             <li>Navisworks</li>
-            <li>Tekla (Basic)</li>
+            <li>Tekla Structures</li>
             <li>BIM 360 / CDE</li>
+            <li>Civil 3D</li>
+            <li>STAAD Pro</li>
+            <li>Bluebeam Revu</li>
           </ul>
         </div>
 
         <div class="card">
           <h3>Education</h3>
-          <ul>
-            <li>B.E. Civil Engineering</li>
-            <li>BIM Professional Training (Structural)</li>
-          </ul>
+          <strong>Bachelor of Civil Engineering</strong><br />
+          JSPM Narhe Technical Campus, Pune (2020 – 2023)
+          <p style="margin-top:8px;">
+            <strong>Final Year Project:</strong> Developing Biofilter using Algae & Slaked Lime for Air Pollution Control
+          </p>
         </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
+      <!-- RIGHT (FULL EXPERIENCE – UNTOUCHED) -->
       <div class="card">
         <h3>Professional Experience</h3>
+
+        <strong>Revit Modeler – Precision Precast Solution, Pune</strong><br />
+        September 2025 – Present
         <ul>
-          <li>Structural BIM modeling using Revit</li>
-          <li>Precast modeling and detailing</li>
-          <li>Preparation of shop & GFC drawings</li>
-          <li>Coordination with Architectural & MEP teams</li>
-          <li>Worked on infrastructure BIM projects</li>
+          <li>Prepared precast shop drawings with reinforcement and connection details.</li>
+          <li>Produced sections, elevations, and technical drawings.</li>
+          <li>Ensured compliance with standards and client requirements.</li>
+          <li>Maintained drawing accuracy and version control.</li>
+        </ul>
+
+        <br />
+
+        <strong>Senior Project Engineer – Noren Tech, Pune</strong><br />
+        April 2024 – September 2025
+        <ul>
+          <li>Managed structural and MEP BIM models using Revit.</li>
+          <li>Performed clash detection and coordination using Navisworks.</li>
+          <li>Prepared construction-ready drawings from coordinated models.</li>
+          <li>Worked on Jakarta Metro Line infrastructure project.</li>
+        </ul>
+
+        <br />
+
+        <strong>Professional Trainee – Novatr (Jakarta Metro Line – Infrastructure BIM)</strong>
+        <ul>
+          <li>Developed structural BIM models using Autodesk Revit.</li>
+          <li>Coordinated architectural, structural, and MEP models.</li>
+          <li>Performed clash detection and constructability analysis.</li>
+          <li>Worked in Common Data Environment (CDE) workflows.</li>
+          <li>Delivered LOD 300–400 models and drawings.</li>
         </ul>
       </div>
 
@@ -229,18 +241,19 @@
 
       <strong>Jakarta Metro Line – Infrastructure BIM</strong>
       <ul>
-        <li>Structural BIM modeling</li>
-        <li>LOD 300–400 models</li>
-        <li>Coordination & clash resolution</li>
+        <li>Structural BIM modeling using Revit</li>
+        <li>Coordination with architectural & MEP models</li>
+        <li>Clash detection and issue resolution</li>
+        <li>LOD 300–400 models and drawings</li>
       </ul>
 
-      <br>
+      <br />
 
       <strong>Precast Building Project – Pune</strong>
       <ul>
-        <li>Precast elements & reinforcement detailing</li>
-        <li>Shop drawings</li>
-        <li>Site coordination support</li>
+        <li>Precast element modeling and detailing</li>
+        <li>Shop drawings with reinforcement details</li>
+        <li>Coordination with site and design team</li>
       </ul>
     </section>
 
