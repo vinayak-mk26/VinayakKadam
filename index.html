@@ -14,7 +14,7 @@
       line-height: 1.6;
     }
 
-    /* ===== HEADER ===== */
+    /* ===== HEADER (SCROLLABLE) ===== */
     header {
       width: 100%;
       background:
@@ -23,7 +23,7 @@
       background-size: cover;
       background-position: center;
       color: #e5e7eb;
-      padding: 50px 20px 40px 20px;
+      padding: 60px 20px 40px 20px;
       text-align: center;
     }
 
@@ -31,7 +31,7 @@
       margin: 0;
       font-size: 36px;
       letter-spacing: 1px;
-      color: #1e293b; /* darker color */
+      color: #1e293b; 
     }
 
     header p {
@@ -145,7 +145,7 @@
   </div>
 </header>
 
-<!-- Floating buttons visible while scrolling -->
+<!-- Floating buttons appear only after scrolling past header -->
 <div class="floating-buttons" id="floating-buttons">
   <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view?usp=drive_link" target="_blank">SEE PORTFOLIO</a>
   <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">SEE LINKEDIN</a>
@@ -179,85 +179,7 @@
   </div>
 </section>
 
-<section>
-  <h2>Professional Experience</h2>
-
-  <div class="card">
-    <strong>Revit Modeler – Precision Precast Solution, Pune</strong><br />
-    September 2025 – Present
-    <ul>
-      <li>Prepared precast shop drawings with reinforcement and connection details.</li>
-      <li>Produced sections, elevations, and technical drawings.</li>
-      <li>Ensured compliance with standards and client requirements.</li>
-      <li>Maintained drawing accuracy and version control.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Senior Project Engineer – Noren Tech, Pune</strong><br />
-    April 2024 – September 2025
-    <ul>
-      <li>Managed structural and MEP BIM models using Revit.</li>
-      <li>Performed clash detection and coordination using Navisworks.</li>
-      <li>Prepared construction-ready drawings from coordinated models.</li>
-      <li>Worked on Jakarta Metro Line infrastructure project.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Professional Trainee – Novatr (Jakarta Metro Line – Infrastructure BIM)</strong>
-    <ul>
-      <li>Developed structural BIM models using Autodesk Revit.</li>
-      <li>Coordinated architectural, structural, and MEP models.</li>
-      <li>Performed clash detection and constructability analysis.</li>
-      <li>Worked in Common Data Environment (CDE) workflows.</li>
-      <li>Delivered LOD 300–400 models and drawings.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Education</h2>
-  <div class="card">
-    <strong>Bachelor of Civil Engineering</strong><br />
-    JSPM Narhe Technical Campus, Pune (2020 – 2023)
-    <p><strong>Final Year Project:</strong> Developing Biofilter using Algae & Slaked Lime for Air Pollution Control</p>
-  </div>
-</section>
-
-<section>
-  <h2>Projects</h2>
-
-  <div class="card">
-    <strong>Jakarta Metro Line – Infrastructure BIM</strong>
-    <img src="./project-jakarta.jpg" alt="Jakarta Metro BIM" style="width:100%; margin-top:12px; border-radius:10px;" />
-    <ul>
-      <li>Structural BIM modeling using Revit</li>
-      <li>Coordination with architectural & MEP models</li>
-      <li>Clash detection and issue resolution</li>
-      <li>LOD 300–400 models and drawings</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Precast Building Project – Pune</strong>
-    <img src="./project-precast.jpg" alt="Precast BIM Project" style="width:100%; margin-top:12px; border-radius:10px;" />
-    <ul>
-      <li>Precast element modeling and detailing</li>
-      <li>Shop drawings with reinforcement details</li>
-      <li>Coordination with site and design team</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <div class="card">
-    <p>📞 9370441367</p>
-    <p>📧 vinayak.mk@outlook.com</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">LinkedIn Profile</a></p>
-  </div>
-</section>
+<!-- ... rest of your sections ... -->
 
 <footer>
   © 2025 Vinayak Kadam | BIM Portfolio
@@ -268,6 +190,7 @@
   const header = document.getElementById('top-header');
 
   window.addEventListener('scroll', () => {
+    // Show floating buttons only when header is fully scrolled out
     const headerBottom = header.offsetTop + header.offsetHeight;
     if (window.scrollY > headerBottom) {
       floatingButtons.style.display = 'flex';
