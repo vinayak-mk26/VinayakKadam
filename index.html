@@ -40,11 +40,25 @@
     }
 
     header .portfolio-text {
-      margin-top: 12px;
-      font-size: 15px;
+      margin-top: 14px;
+    }
+
+    .portfolio-btn {
+      display: inline-block;
+      padding: 8px 18px;
+      border: 2px solid #93c5fd;
+      border-radius: 8px;
       color: #93c5fd;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: 1px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-btn:hover {
+      background: #93c5fd;
+      color: #0f172a;
     }
 
     section {
@@ -89,7 +103,11 @@
 <header>
   <h1>Vinayak Madhukar Kadam</h1>
   <p>BIM Engineer | Structural • Precast • Infrastructure</p>
-  <div class="portfolio-text">SEE PORTFOLIO</div>
+  <div class="portfolio-text">
+    <a href="https://drive.google.com" target="_blank" class="portfolio-btn">
+      SEE PORTFOLIO
+    </a>
+  </div>
 </header>
 
 <section>
@@ -182,4 +200,3 @@
 
 </body>
 </html>
-
