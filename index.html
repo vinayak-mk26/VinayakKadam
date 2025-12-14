@@ -44,10 +44,11 @@
     }
 
     .portfolio-text {
-      margin-top: 14px;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
     }
 
     .portfolio-btn {
@@ -62,7 +63,6 @@
       font-weight: 600;
       letter-spacing: 1px;
       text-decoration: none;
-      margin: 6px 6px;
       transition: all 0.3s ease;
     }
 
@@ -71,9 +71,37 @@
       color: #0f172a;
     }
 
+    /* ===== FLOATING BUTTONS ===== */
+    .floating-buttons {
+      position: fixed;
+      top: 150px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    .floating-buttons a {
+      padding: 8px 14px;
+      border: 2px solid #93c5fd;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #93c5fd;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.3s ease;
+      background: rgba(255,255,255,0.9);
+    }
+
+    .floating-buttons a:hover {
+      background: #93c5fd;
+      color: #0f172a;
+    }
+
     section {
       max-width: 1050px;
-      margin: 100px auto 25px auto;
+      margin: 120px auto 25px auto;
       padding: 0 20px;
     }
 
@@ -118,6 +146,12 @@
     <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank" class="portfolio-btn">SEE LINKEDIN</a>
   </div>
 </header>
+
+<!-- Floating buttons visible while scrolling -->
+<div class="floating-buttons">
+  <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view?usp=drive_link" target="_blank">SEE PORTFOLIO</a>
+  <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">SEE LINKEDIN</a>
+</div>
 
 <section>
   <h2>About Me</h2>
@@ -173,8 +207,7 @@
   </div>
 
   <div class="card">
-    <strong>Professional Trainee – Novatr</strong><br />
-    <em>Jakarta Metro Line – Infrastructure BIM</em>
+    <strong>Professional Trainee – Novatr (Jakarta Metro Line – Infrastructure BIM)</strong>
     <ul>
       <li>Developed structural BIM models using Autodesk Revit.</li>
       <li>Coordinated architectural, structural, and MEP models.</li>
