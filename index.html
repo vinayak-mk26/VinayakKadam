@@ -1,298 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinayak Kadam | BIM Engineer</title>
+  <meta charset="UTF-8" />
+  <title>Vinayak Madhukar Kadam | BIM Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-    background: #f1f5f9;
-    color: #1f2937;
-    line-height: 1.6;
-  }
-
-  /* ===== HEADER ===== */
-  header {
-    width: 100%;
-    background:
-      linear-gradient(rgba(8,15,30,0.85), rgba(8,15,30,0.85)),
-      url('./bim-header.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px 50px;
-    text-align: center;
-  }
-
-  header h1 {
-    margin: 0;
-    font-size: 36px;
-    color: #cbd5f5;
-  }
-
-  header p {
-    margin-top: 6px;
-    font-size: 17px;
-    color: #cbd5f5;
-  }
-
-  .contact-header {
-    margin-top: 8px;
-    font-size: 15px;
-    color: #e5e7eb;
-  }
-
-  .portfolio-text {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .portfolio-btn {
-    padding: 8px 20px;
-    border: 2px solid #93c5fd;
-    border-radius: 8px;
-    color: #93c5fd;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
-  }
-
-  .portfolio-btn:hover {
-    background: #93c5fd;
-    color: #0f172a;
-  }
-
-  /* ===== FLOATING BUTTONS ===== */
-  .floating-buttons {
-    position: fixed;
-    top: 150px;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-    z-index: 999;
-  }
-
-  .floating-buttons.show {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .floating-buttons a {
-    padding: 8px 14px;
-    border: 2px solid #93c5fd;
-    border-radius: 8px;
-    color: #93c5fd;
-    background: rgba(255,255,255,0.9);
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  .floating-buttons a:hover {
-    background: #93c5fd;
-    color: #0f172a;
-  }
-
-  section {
-    max-width: 1400px; /* wider layout */
-    margin: 45px auto;
-    padding: 0 24px;
-  }
-
-  h2 {
-    color: #0f172a;
-    border-left: 5px solid #38bdf8;
-    padding-left: 10px;
-    margin-bottom: 10px;
-  }
-
-  .card {
-    background: #ffffff;
-    padding: 26px;
-    border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    margin-top: 12px;
-  }
-
-  ul {
-    padding-left: 20px;
-    margin: 0;
-  }
-
-  /* ===== MAIN GRID ===== */
-  .content-grid {
-    display: grid;
-    grid-template-columns: 1fr 2.6fr;
-    gap: 32px;
-    align-items: start;
-  }
-
-  img {
-    width: 100%;
-    margin-top: 12px;
-    border-radius: 10px;
-  }
-
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: #0f172a;
-    color: #cbd5f5;
-    margin-top: 40px;
-    font-size: 14px;
-  }
-
-  @media(max-width: 900px) {
-    .content-grid {
-      grid-template-columns: 1fr;
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
     }
+
+    body {
+      background-image: 
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #1e293b;
+    }
+
+    /* ===== LAYOUT WIDTH ===== */
+    .container {
+      max-width: 1400px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    /* ===== GLASS CARD ===== */
+    .card {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(10px);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
     header h1 {
-      font-size: 28px;
+      font-size: 42px;
+      color: #0f172a;
     }
-  }
-</style>
+
+    header h2 {
+      font-size: 20px;
+      margin-top: 8px;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 16px;
+    }
+
+    .header-links {
+      margin-top: 16px;
+    }
+
+    .header-links a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 25px;
+      background: rgba(15,23,42,0.85);
+      color: white;
+      margin: 0 8px;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    /* ===== SECTION TITLES ===== */
+    h3 {
+      margin-bottom: 12px;
+      color: #0f172a;
+      border-bottom: 2px solid #cbd5f5;
+      padding-bottom: 6px;
+    }
+
+    /* ===== GRID ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 24px;
+    }
+
+    /* ===== LIST ===== */
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    /* ===== PROJECTS ===== */
+    .project {
+      margin-bottom: 20px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header id="topHeader">
-  <h1>Vinayak Madhukar Kadam</h1>
-  <p>BIM Engineer | Structural • Precast • Infrastructure</p>
+  <header class="card container">
+    <h1>Vinayak Madhukar Kadam</h1>
+    <h2>BIM Engineer – Structural</h2>
+    <p>📞 +91-XXXXXXXXXX | ✉️ yourmail@email.com</p>
 
-  <div class="contact-header">
-    📞 9370441367 &nbsp; | &nbsp; 📧 vinayak.mk@outlook.com
-  </div>
-
-  <div class="portfolio-text">
-    <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view" target="_blank" class="portfolio-btn">SEE PORTFOLIO</a>
-    <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank" class="portfolio-btn">SEE LINKEDIN</a>
-  </div>
-</header>
-
-<div class="floating-buttons" id="floatBtns">
-  <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view" target="_blank">SEE PORTFOLIO</a>
-  <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">SEE LINKEDIN</a>
-</div>
-
-<!-- LEFT + RIGHT CONTENT -->
-<section class="content-grid">
-
-  <!-- LEFT 1/3 -->
-  <div>
-    <div class="card">
-      <h2>Software Skills</h2>
-      <ul>
-        <li>Autodesk Revit (Structure & BIM)</li>
-        <li>AutoCAD</li>
-        <li>Navisworks</li>
-        <li>Tekla Structures</li>
-        <li>BIM 360 / CDE</li>
-        <li>Civil 3D</li>
-        <li>STAAD Pro</li>
-        <li>Bluebeam Revu</li>
-      </ul>
+    <div class="header-links">
+      <a href="#" target="_blank">See Portfolio</a>
+      <a href="#" target="_blank">See LinkedIn</a>
     </div>
+  </header>
 
-    <div class="card">
-      <h2>Education</h2>
-      <strong>Bachelor of Civil Engineering</strong><br>
-      JSPM Narhe Technical Campus, Pune (2020 – 2023)
-      <p><strong>Final Year Project:</strong> Developing Biofilter using Algae & Slaked Lime for Air Pollution Control</p>
-    </div>
+  <div class="container">
+
+    <!-- ABOUT ME -->
+    <section class="card">
+      <h3>About Me</h3>
+      <p>
+        BIM-focused Structural Engineer with hands-on experience in Revit Structure,
+        AutoCAD drafting, and coordination of infrastructure and building projects.
+        Passionate about delivering accurate BIM models and drawings aligned with
+        international standards.
+      </p>
+    </section>
+
+    <!-- SKILLS + EXPERIENCE -->
+    <section class="grid">
+
+      <!-- LEFT 1/3 -->
+      <div>
+        <div class="card">
+          <h3>Software Skills</h3>
+          <ul>
+            <li>Revit Structure</li>
+            <li>AutoCAD</li>
+            <li>Navisworks (Basic)</li>
+            <li>BIM 360 (Exposure)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Education</h3>
+          <ul>
+            <li>B.E. Civil Engineering</li>
+            <li>BIM Professional Course (Structural)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT 3/4 -->
+      <div class="card">
+        <h3>Professional Experience</h3>
+        <ul>
+          <li>Structural BIM modeling using Revit</li>
+          <li>Preparation of GFC and shop drawings</li>
+          <li>Coordination with architectural and MEP teams</li>
+          <li>Precast modeling and detailing</li>
+          <li>Support for infrastructure BIM projects</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="card">
+      <h3>Projects</h3>
+
+      <div class="project">
+        <strong>Jakarta Metro Line – BIM Project</strong>
+        <ul>
+          <li>Infrastructure structural BIM modeling</li>
+          <li>LOD 300–400 models</li>
+          <li>Interdisciplinary coordination</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <strong>Precast Building Project – Pune</strong>
+        <ul>
+          <li>Precast element modeling</li>
+          <li>Reinforcement detailing</li>
+          <li>Shop drawings</li>
+        </ul>
+      </div>
+    </section>
+
   </div>
-
-  <!-- RIGHT 3/4 -->
-  <div>
-    <div class="card">
-      <h2>Professional Experience</h2>
-
-      <strong>Revit Modeler – Precision Precast Solution, Pune</strong><br>
-      September 2025 – Present
-      <ul>
-        <li>Prepared precast shop drawings with reinforcement and connection details.</li>
-        <li>Produced sections, elevations, and technical drawings.</li>
-        <li>Ensured compliance with standards and client requirements.</li>
-        <li>Maintained drawing accuracy and version control.</li>
-      </ul>
-
-      <br>
-
-      <strong>Senior Project Engineer – Noren Tech, Pune</strong><br>
-      April 2024 – September 2025
-      <ul>
-        <li>Managed structural and MEP BIM models using Revit.</li>
-        <li>Performed clash detection and coordination using Navisworks.</li>
-        <li>Prepared construction-ready drawings from coordinated models.</li>
-        <li>Worked on Jakarta Metro Line infrastructure project.</li>
-      </ul>
-
-      <br>
-
-      <strong>Professional Trainee – Novatr (Jakarta Metro Line – Infrastructure BIM)</strong>
-      <ul>
-        <li>Developed structural BIM models using Autodesk Revit.</li>
-        <li>Coordinated architectural, structural, and MEP models.</li>
-        <li>Performed clash detection and constructability analysis.</li>
-        <li>Worked in Common Data Environment (CDE) workflows.</li>
-        <li>Delivered LOD 300–400 models and drawings.</li>
-      </ul>
-    </div>
-  </div>
-
-</section>
-
-<!-- PROJECTS FULL WIDTH -->
-<section>
-  <h2>Projects</h2>
-
-  <div class="card">
-    <strong>Jakarta Metro Line – Infrastructure BIM</strong>
-    <img src="./project-jakarta.jpg">
-    <ul>
-      <li>Structural BIM modeling using Revit</li>
-      <li>Coordination with architectural & MEP models</li>
-      <li>Clash detection and issue resolution</li>
-      <li>LOD 300–400 models and drawings</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Precast Building Project – Pune</strong>
-    <img src="./project-precast.jpg">
-    <ul>
-      <li>Precast element modeling and detailing</li>
-      <li>Shop drawings with reinforcement details</li>
-      <li>Coordination with site and design team</li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  © 2025 Vinayak Kadam | BIM Portfolio
-</footer>
-
-<script>
-  const floatBtns = document.getElementById("floatBtns");
-  const header = document.getElementById("topHeader");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > header.offsetHeight) {
-      floatBtns.classList.add("show");
-    } else {
-      floatBtns.classList.remove("show");
-    }
-  });
-</script>
 
 </body>
 </html>
