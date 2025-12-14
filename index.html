@@ -21,15 +21,12 @@
         url('bim-header.jpg');
       background-size: cover;
       background-position: center;
-      color: #e5e7eb;
       padding: 60px 20px 40px 20px;
       text-align: center;
     }
 
     header h1 {
-      margin: 0;
       font-size: 36px;
-      letter-spacing: 1px;
       color: #cbd5f5;
     }
 
@@ -42,26 +39,20 @@
     .portfolio-text {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 10px;
       margin-top: 14px;
     }
 
     .portfolio-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
       padding: 8px 18px;
       border: 2px solid #93c5fd;
       border-radius: 8px;
       color: #93c5fd;
       font-size: 14px;
       font-weight: 600;
-      letter-spacing: 1px;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
-
     .portfolio-btn:hover {
       background: #93c5fd;
       color: #0f172a;
@@ -74,56 +65,43 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      z-index: 1000;
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.4s ease;
     }
-
     .floating-buttons.show {
       opacity: 1;
       pointer-events: auto;
     }
-
     .floating-buttons a {
       padding: 8px 14px;
       border: 2px solid #93c5fd;
       border-radius: 8px;
-      text-decoration: none;
       color: #93c5fd;
-      font-weight: 600;
-      text-align: center;
-      transition: all 0.3s ease;
       background: rgba(255,255,255,0.9);
+      text-decoration: none;
+      font-weight: 600;
     }
-
     .floating-buttons a:hover {
       background: #93c5fd;
       color: #0f172a;
     }
 
-    section {
-      max-width: 1050px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-
+    section { max-width: 1050px; margin: 50px auto; padding: 0 20px; }
     h2 {
       color: #0f172a;
       border-left: 5px solid #38bdf8;
       padding-left: 10px;
       margin-bottom: 10px;
     }
-
     .card {
-      background: #ffffff;
+      background: #fff;
       padding: 20px;
       margin-top: 10px;
       border-radius: 14px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
-
-    ul { padding-left: 20px; margin: 0; }
+    ul { padding-left: 20px; }
 
     img { width: 100%; margin-top: 12px; border-radius: 10px; }
 
@@ -136,24 +114,15 @@
       font-size: 14px;
     }
 
-    /* ===== FLEX LAYOUT FOR MID SECTION ===== */
     .mid-section {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
     }
+    .left-col { flex: 0 0 32%; }
+    .right-col { flex: 0 0 66%; }
 
-    .left-col {
-      flex: 1 1 30%;
-      min-width: 250px;
-    }
-
-    .right-col {
-      flex: 1 1 70%;
-      min-width: 300px;
-    }
-
-    @media(max-width:900px){
+    @media(max-width:900px) {
       .mid-section { flex-direction: column; }
       .left-col, .right-col { flex: 1 1 100%; }
       header h1 { font-size: 28px; }
@@ -177,9 +146,8 @@
   <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">SEE LINKEDIN</a>
 </div>
 
-<!-- ===== MID SECTION FLEX ===== -->
+<!-- MID SECTION (LEFT + RIGHT) -->
 <section class="mid-section">
-  <!-- Left Column: Software Skills + Education -->
   <div class="left-col">
     <div class="card">
       <h2>Software Skills</h2>
@@ -194,6 +162,7 @@
         <li>Bluebeam Revu</li>
       </ul>
     </div>
+
     <div class="card">
       <h2>Education</h2>
       <strong>Bachelor of Civil Engineering</strong><br />
@@ -202,7 +171,6 @@
     </div>
   </div>
 
-  <!-- Right Column: Professional Summary -->
   <div class="right-col">
     <div class="card">
       <h2>Professional Summary</h2>
@@ -216,10 +184,9 @@
   </div>
 </section>
 
-<!-- ===== PROJECTS ===== -->
+<!-- PROJECTS -->
 <section>
   <h2>Projects</h2>
-
   <div class="card">
     <strong>Jakarta Metro Line – Infrastructure BIM</strong>
     <img src="project-jakarta.jpg" alt="Jakarta Metro BIM" />
@@ -242,18 +209,15 @@
   </div>
 </section>
 
-<!-- ===== EXPERIENCE ===== -->
+<!-- EXPERIENCE -->
 <section>
   <h2>Professional Experience</h2>
-
   <div class="card">
     <strong>Revit Modeler – Precision Precast Solution, Pune</strong><br />
     September 2025 – Present
     <ul>
-      <li>Prepared precast shop drawings with reinforcement and connection details.</li>
-      <li>Produced sections, elevations, and technical drawings.</li>
-      <li>Ensured compliance with standards and client requirements.</li>
-      <li>Maintained drawing accuracy and version control.</li>
+      <li>Prepared precast shop drawings</li>
+      <li>Produced sections, elevations & technical drawings</li>
     </ul>
   </div>
 
@@ -261,50 +225,31 @@
     <strong>Senior Project Engineer – Noren Tech, Pune</strong><br />
     April 2024 – September 2025
     <ul>
-      <li>Managed structural and MEP BIM models using Revit.</li>
-      <li>Performed clash detection and coordination using Navisworks.</li>
-      <li>Prepared construction-ready drawings from coordinated models.</li>
-      <li>Worked on Jakarta Metro Line infrastructure project.</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Professional Trainee – Novatr (Jakarta Metro Line – Infrastructure BIM)</strong>
-    <ul>
-      <li>Developed structural BIM models using Autodesk Revit.</li>
-      <li>Coordinated architectural, structural, and MEP models.</li>
-      <li>Performed clash detection and constructability analysis.</li>
-      <li>Worked in Common Data Environment (CDE) workflows.</li>
-      <li>Delivered LOD 300–400 models and drawings.</li>
+      <li>Managed structural & MEP BIM models using Revit</li>
+      <li>Performed clash detection & coordination</li>
     </ul>
   </div>
 </section>
 
-<!-- ===== CONTACT ===== -->
+<!-- CONTACT -->
 <section>
   <h2>Contact</h2>
   <div class="card">
-    <p>📞 9370441367</p>
-    <p>📧 vinayak.mk@outlook.com</p>
-    <p>🔗 <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">LinkedIn Profile</a></p>
+    📞 9370441367<br />
+    📧 vinayak.mk@outlook.com<br />
+    🔗 <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">LinkedIn Profile</a>
   </div>
 </section>
 
-<footer>
-  © 2025 Vinayak Kadam | BIM Portfolio
-</footer>
+<footer>© 2025 Vinayak Kadam | BIM Portfolio</footer>
 
 <script>
   const floatingButtons = document.getElementById('floating-buttons');
   const header = document.getElementById('top-header');
-
   window.addEventListener('scroll', () => {
     const headerBottom = header.offsetTop + header.offsetHeight;
-    if (window.scrollY > headerBottom) {
-      floatingButtons.classList.add('show');
-    } else {
-      floatingButtons.classList.remove('show');
-    }
+    if (window.scrollY > headerBottom) { floatingButtons.classList.add('show'); }
+    else { floatingButtons.classList.remove('show'); }
   });
 </script>
 
