@@ -6,20 +6,21 @@
   <title>Vinayak Kadam | BIM Engineer</title>
 
   <style>
+    /* ===== Reset & Body ===== */
+    * { box-sizing: border-box; margin:0; padding:0; }
     body {
-      margin: 0;
       font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
       background: #f1f5f9;
       color: #1f2937;
       line-height: 1.6;
     }
 
-    /* ===== HEADER (SCROLLABLE) ===== */
+    /* ===== HEADER ===== */
     header {
       width: 100%;
       background:
         linear-gradient(rgba(8,15,30,0.85), rgba(8,15,30,0.85)),
-        url('./bim-header.jpg');
+        url('bim-header.jpg');
       background-size: cover;
       background-position: center;
       color: #e5e7eb;
@@ -31,7 +32,7 @@
       margin: 0;
       font-size: 36px;
       letter-spacing: 1px;
-      color: #1e293b; 
+      color: #1e293b;
     }
 
     header p {
@@ -104,9 +105,10 @@
       color: #0f172a;
     }
 
+    /* ===== SECTIONS ===== */
     section {
       max-width: 1050px;
-      margin: 50px auto 25px auto;
+      margin: 50px auto;
       padding: 0 20px;
     }
 
@@ -130,6 +132,12 @@
       margin: 0;
     }
 
+    img {
+      width: 100%;
+      margin-top: 12px;
+      border-radius: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -139,10 +147,9 @@
       font-size: 14px;
     }
 
-    img {
-      width: 100%;
-      margin-top: 12px;
-      border-radius: 10px;
+    @media(max-width:768px){
+      .floating-buttons { top: 120px; right: 10px; }
+      header h1 { font-size: 28px; }
     }
   </style>
 </head>
@@ -158,7 +165,7 @@
   </div>
 </header>
 
-<!-- Floating buttons appear only after scrolling past header -->
+<!-- Floating buttons appear after scrolling past header -->
 <div class="floating-buttons" id="floating-buttons">
   <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view?usp=drive_link" target="_blank">SEE PORTFOLIO</a>
   <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">SEE LINKEDIN</a>
@@ -243,7 +250,7 @@
 
   <div class="card">
     <strong>Jakarta Metro Line – Infrastructure BIM</strong>
-    <img src="./project-jakarta.jpg" alt="Jakarta Metro BIM" />
+    <img src="project-jakarta.jpg" alt="Jakarta Metro BIM" />
     <ul>
       <li>Structural BIM modeling using Revit</li>
       <li>Coordination with architectural & MEP models</li>
@@ -254,7 +261,7 @@
 
   <div class="card">
     <strong>Precast Building Project – Pune</strong>
-    <img src="./project-precast.jpg" alt="Precast BIM Project" />
+    <img src="project-precast.jpg" alt="Precast BIM Project" />
     <ul>
       <li>Precast element modeling and detailing</li>
       <li>Shop drawings with reinforcement details</li>
