@@ -41,35 +41,40 @@
     /* ===== HEADER ===== */
     header {
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
       position: relative;
       background:
         linear-gradient(rgba(8,15,30,0.85), rgba(8,15,30,0.85)),
-        url('https://images.unsplash.com/photo-1602524200842-8c8f8f374aa0');
+        url('./bim-header.jpg'); /* Your original BIM image */
       background-size: cover;
       background-position: center;
-      color: #e5e7eb;
+      color: #fff;
       border-radius: 14px;
     }
 
     header h1 {
-      font-size: 42px;
-      color: #1e293b; /* darker for visibility */
+      font-size: 44px;
+      color: #ffffff; /* White for strong contrast */
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
 
     header h2 {
-      font-size: 20px;
-      margin-top: 6px;
+      font-size: 22px;
+      margin-top: 8px;
       font-weight: 500;
+      color: #e5e7eb;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 16px;
+      color: #e5e7eb;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
     }
 
     .header-links {
-      margin-top: 18px;
+      margin-top: 20px;
     }
 
     .header-links a {
@@ -81,6 +86,7 @@
       background: rgba(15,23,42,0.85);
       color: #fff;
       font-size: 14px;
+      font-weight: 600;
     }
 
     /* ===== FLOATING BUTTONS ===== */
@@ -101,6 +107,7 @@
       color: white;
       border-radius: 10px;
       font-size: 13px;
+      font-weight: 600;
       text-align: center;
     }
 
@@ -137,11 +144,15 @@
       }
 
       header {
-        padding: 32px 16px;
+        padding: 40px 16px;
       }
 
       header h1 {
-        font-size: 30px;
+        font-size: 32px;
+      }
+
+      header h2 {
+        font-size: 18px;
       }
 
       .header-links a {
