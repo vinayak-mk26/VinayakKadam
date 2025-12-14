@@ -14,19 +14,16 @@
       line-height: 1.6;
     }
 
-    /* ===== FIXED HEADER ===== */
+    /* ===== HEADER ===== */
     header {
-      position: fixed;
-      top: 0;
       width: 100%;
-      z-index: 100;
       background:
         linear-gradient(rgba(8,15,30,0.85), rgba(8,15,30,0.85)),
         url('./bim-header.jpg');
       background-size: cover;
       background-position: center;
       color: #e5e7eb;
-      padding: 30px 20px;
+      padding: 50px 20px 40px 20px;
       text-align: center;
     }
 
@@ -80,6 +77,7 @@
       flex-direction: column;
       gap: 10px;
       z-index: 1000;
+      display: none; /* initially hidden */
     }
 
     .floating-buttons a {
@@ -101,7 +99,7 @@
 
     section {
       max-width: 1050px;
-      margin: 120px auto 25px auto;
+      margin: 50px auto 25px auto;
       padding: 0 20px;
     }
 
@@ -138,7 +136,7 @@
 
 <body>
 
-<header>
+<header id="top-header">
   <h1>Vinayak Madhukar Kadam</h1>
   <p>BIM Engineer | Structural • Precast • Infrastructure</p>
   <div class="portfolio-text">
@@ -148,7 +146,7 @@
 </header>
 
 <!-- Floating buttons visible while scrolling -->
-<div class="floating-buttons">
+<div class="floating-buttons" id="floating-buttons">
   <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view?usp=drive_link" target="_blank">SEE PORTFOLIO</a>
   <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">SEE LINKEDIN</a>
 </div>
@@ -264,6 +262,20 @@
 <footer>
   © 2025 Vinayak Kadam | BIM Portfolio
 </footer>
+
+<script>
+  const floatingButtons = document.getElementById('floating-buttons');
+  const header = document.getElementById('top-header');
+
+  window.addEventListener('scroll', () => {
+    const headerBottom = header.offsetTop + header.offsetHeight;
+    if (window.scrollY > headerBottom) {
+      floatingButtons.style.display = 'flex';
+    } else {
+      floatingButtons.style.display = 'none';
+    }
+  });
+</script>
 
 </body>
 </html>
