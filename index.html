@@ -15,12 +15,7 @@
 
     body {
       color: #1f2937;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)),
-        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      background-color: #f8fafc; /* soft general background */
     }
 
     .container {
@@ -30,46 +25,44 @@
     }
 
     .card {
-      background: rgba(255,255,255,0.65);
-      backdrop-filter: blur(10px);
+      background: rgba(255,192,203,0.15); /* faint pinkish background */
+      backdrop-filter: blur(5px);
       border-radius: 14px;
       padding: 24px;
       margin-bottom: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     }
 
     /* ===== HEADER ===== */
     header {
       text-align: center;
-      padding: 50px 20px;
+      padding: 60px 20px;
       position: relative;
-      background:
-        linear-gradient(rgba(8,15,30,0.85), rgba(8,15,30,0.85)),
-        url('https://images.unsplash.com/photo-1602524200842-8c8f8f374aa0');
-      background-size: cover;
-      background-position: center;
-      color: #e5e7eb;
+      background-color: #dbeafe; /* faint light blue */
+      color: #2c003e; /* dark violet/black text */
       border-radius: 14px;
     }
 
     header h1 {
-      font-size: 42px;
-      color: #1e293b; /* darker for visibility */
+      font-size: 44px;
+      color: #2c003e;
     }
 
     header h2 {
-      font-size: 20px;
-      margin-top: 6px;
+      font-size: 22px;
+      margin-top: 8px;
       font-weight: 500;
+      color: #2c003e;
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 16px;
+      color: #2c003e;
     }
 
     .header-links {
-      margin-top: 18px;
+      margin-top: 20px;
     }
 
     .header-links a {
@@ -81,6 +74,7 @@
       background: rgba(15,23,42,0.85);
       color: #fff;
       font-size: 14px;
+      font-weight: 600;
     }
 
     /* ===== FLOATING BUTTONS ===== */
@@ -101,6 +95,7 @@
       color: white;
       border-radius: 10px;
       font-size: 13px;
+      font-weight: 600;
       text-align: center;
     }
 
@@ -128,20 +123,20 @@
 
     /* ===== MOBILE ===== */
     @media (max-width: 768px) {
-      body {
-        background-attachment: scroll;
-      }
-
       .container {
         padding: 16px;
       }
 
       header {
-        padding: 32px 16px;
+        padding: 40px 16px;
       }
 
       header h1 {
-        font-size: 30px;
+        font-size: 32px;
+      }
+
+      header h2 {
+        font-size: 18px;
       }
 
       .header-links a {
