@@ -44,7 +44,9 @@
     }
 
     .portfolio-btn {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       padding: 8px 18px;
       border: 2px solid #93c5fd;
       border-radius: 8px;
@@ -53,6 +55,7 @@
       font-weight: 600;
       letter-spacing: 1px;
       text-decoration: none;
+      margin: 6px 6px; /* ensures both buttons show */
       transition: all 0.3s ease;
     }
 
@@ -103,9 +106,9 @@
 <header>
   <h1>Vinayak Madhukar Kadam</h1>
   <p>BIM Engineer | Structural • Precast • Infrastructure</p>
-  <div class="portfolio-text">
+  <div class="portfolio-text" style="display:flex; justify-content:center; flex-wrap:wrap;">
     <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view?usp=drive_link" target="_blank" class="portfolio-btn">SEE PORTFOLIO</a>
-    <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank" class="portfolio-btn" style="margin-left:10px;">SEE LINKEDIN</a>
+    <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank" class="portfolio-btn">SEE LINKEDIN</a>
   </div>
 </header>
 
