@@ -14,15 +14,19 @@
       line-height: 1.6;
     }
 
-    /* ===== HEADER WITH BIM IMAGE ===== */
+    /* ===== FIXED HEADER ===== */
     header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
       background:
-        linear-gradient(rgba(8,15,30,0.8), rgba(8,15,30,0.8)),
+        linear-gradient(rgba(8,15,30,0.85), rgba(8,15,30,0.85)),
         url('./bim-header.jpg');
       background-size: cover;
       background-position: center;
       color: #e5e7eb;
-      padding: 30px 20px; /* reduced header height */
+      padding: 30px 20px;
       text-align: center;
     }
 
@@ -30,7 +34,7 @@
       margin: 0;
       font-size: 36px;
       letter-spacing: 1px;
-      color: #e2e8f0; /* darker heading color */
+      color: #1e293b; /* darker color */
     }
 
     header p {
@@ -39,8 +43,11 @@
       color: #cbd5f5;
     }
 
-    header .portfolio-text {
+    .portfolio-text {
       margin-top: 14px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     .portfolio-btn {
@@ -55,7 +62,7 @@
       font-weight: 600;
       letter-spacing: 1px;
       text-decoration: none;
-      margin: 6px 6px; /* ensures both buttons show */
+      margin: 6px 6px;
       transition: all 0.3s ease;
     }
 
@@ -66,7 +73,7 @@
 
     section {
       max-width: 1050px;
-      margin: 25px auto; /* reduced space between sections */
+      margin: 100px auto 25px auto; /* adjusted top margin for fixed header */
       padding: 0 20px;
     }
 
@@ -105,8 +112,8 @@
 
 <header>
   <h1>Vinayak Madhukar Kadam</h1>
-  <p>BIM Engineer | Structural • Precast • Infrastructure</p>
-  <div class="portfolio-text" style="display:flex; justify-content:center; flex-wrap:wrap;">
+  <p>BIM Engineer | Structural</p>
+  <div class="portfolio-text">
     <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view?usp=drive_link" target="_blank" class="portfolio-btn">SEE PORTFOLIO</a>
     <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank" class="portfolio-btn">SEE LINKEDIN</a>
   </div>
@@ -166,8 +173,8 @@
   </div>
 
   <div class="card">
-    <strong>BIM Engineer Trainee – Novatr</strong><br />
-    <em>Jakarta Metro Line – BIM</em>
+    <strong>BIM Engineer – Novatr</strong><br />
+    <em>Jakarta Metro Line – Infrastructure BIM</em>
     <ul>
       <li>Developed structural BIM models using Autodesk Revit.</li>
       <li>Coordinated architectural, structural, and MEP models.</li>
@@ -186,8 +193,6 @@
     <p><strong>Final Year Project:</strong> Developing Biofilter using Algae & Slaked Lime for Air Pollution Control</p>
   </div>
 </section>
-
-
 
 <section>
   <h2>Projects</h2>
@@ -219,8 +224,7 @@
   <div class="card">
     <p>📞 9370441367</p>
     <p>📧 vinayak.mk@outlook.com</p>
-    <p>🔗 <a href="https://www.linkedin.com" target="_blank">LinkedIn Profile</a></p>
-    
+    <p>🔗 <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">LinkedIn Profile</a></p>
   </div>
 </section>
 
