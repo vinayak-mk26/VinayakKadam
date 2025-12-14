@@ -38,9 +38,20 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
+    /* ===== HEADER ===== */
     header {
       text-align: center;
       padding: 50px 20px;
+      position: relative;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 16px;
+      border: 4px solid #e2e8f0;
     }
 
     header h1 {
@@ -73,6 +84,27 @@
       background: rgba(15,23,42,0.85);
       color: #fff;
       font-size: 14px;
+    }
+
+    /* ===== FLOATING BUTTONS ===== */
+    .floating-links {
+      position: fixed;
+      right: 20px;
+      top: 40%;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+
+    .floating-links a {
+      text-decoration: none;
+      padding: 10px 16px;
+      background: rgba(15,23,42,0.9);
+      color: white;
+      border-radius: 10px;
+      font-size: 13px;
+      text-align: center;
     }
 
     h3 {
@@ -113,15 +145,11 @@
 
       header h1 {
         font-size: 30px;
-        line-height: 1.2;
       }
 
-      header h2 {
-        font-size: 17px;
-      }
-
-      header p {
-        font-size: 15px;
+      header img {
+        width: 100px;
+        height: 100px;
       }
 
       .header-links a {
@@ -134,8 +162,8 @@
         grid-template-columns: 1fr;
       }
 
-      .card {
-        padding: 18px;
+      .floating-links {
+        right: 10px;
       }
     }
   </style>
@@ -143,8 +171,17 @@
 
 <body>
 
+  <!-- FLOATING LINKS -->
+  <div class="floating-links" id="floatingLinks">
+    <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view" target="_blank">See Portfolio</a>
+    <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">See LinkedIn</a>
+  </div>
+
   <!-- HEADER -->
-  <header class="card container">
+  <header class="card container" id="mainHeader">
+    <!-- 🔹 ADD YOUR PHOTO HERE -->
+    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" alt="Profile Photo">
+
     <h1>Vinayak Madhukar Kadam</h1>
     <h2>BIM Engineer | Structural • Precast • Infrastructure</h2>
     <p>📞 9370441367 | 📧 vinayak.mk@outlook.com</p>
@@ -197,7 +234,7 @@
         </div>
       </div>
 
-      <!-- RIGHT (FULL EXPERIENCE – UNTOUCHED) -->
+      <!-- RIGHT -->
       <div class="card">
         <h3>Professional Experience</h3>
 
@@ -258,6 +295,21 @@
     </section>
 
   </div>
+
+  <!-- JS FOR FLOATING VISIBILITY -->
+  <script>
+    const header = document.getElementById("mainHeader");
+    const floating = document.getElementById("floatingLinks");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        floating.style.display = entry.isIntersecting ? "none" : "flex";
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(header);
+  </script>
 
 </body>
 </html>
