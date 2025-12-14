@@ -11,79 +11,74 @@
       font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
       background: #f1f5f9;
       color: #1f2937;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     /* ===== HEADER WITH BIM IMAGE ===== */
     header {
       background:
-        linear-gradient(rgba(15,23,42,0.65), rgba(15,23,42,0.65)),
-        url('./bim-header.jpg')
+        linear-gradient(rgba(8,15,30,0.8), rgba(8,15,30,0.8)),
+        url('./bim-header.jpg');
       background-size: cover;
       background-position: center;
-      color: white;
-      padding: 35px 20px; /* reduced block size */
+      color: #e5e7eb;
+      padding: 30px 20px; /* reduced header height */
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px; /* text size unchanged */
+      font-size: 36px;
       letter-spacing: 1px;
+      color: #e2e8f0; /* darker heading color */
     }
 
     header p {
-      margin-top: 8px;
-      font-size: 18px; /* text size unchanged */
-      color: #e5e7eb;
+      margin-top: 6px;
+      font-size: 17px;
+      color: #cbd5f5;
     }
 
-    header a {
-      display: inline-block;
-      margin-top: 18px;
-      background: #38bdf8;
-      color: #0f172a;
-      padding: 10px 22px;
-      border-radius: 30px;
-      font-weight: bold;
-      text-decoration: none;
+    header .portfolio-text {
+      margin-top: 12px;
+      font-size: 15px;
+      color: #93c5fd;
+      font-weight: 600;
+      letter-spacing: 1px;
     }
 
     section {
       max-width: 1050px;
-      margin: 60px auto;
+      margin: 25px auto; /* reduced space between sections */
       padding: 0 20px;
     }
 
     h2 {
       color: #0f172a;
-      border-left: 6px solid #38bdf8;
-      padding-left: 12px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 10px;
       margin-bottom: 10px;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.95);
-      padding: 28px;
-      margin-top: 20px;
-      border-radius: 16px;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      background: #ffffff;
+      padding: 20px;
+      margin-top: 10px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     ul {
-      padding-left: 22px;
+      padding-left: 20px;
+      margin: 0;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 20px;
       background: #0f172a;
-      color: #e5e7eb;
-      margin-top: 80px;
-    }
-
-    footer p {
-      margin: 0;
+      color: #cbd5f5;
+      margin-top: 40px;
       font-size: 14px;
     }
   </style>
@@ -93,19 +88,18 @@
 
 <header>
   <h1>Vinayak Madhukar Kadam</h1>
-  <p>BIM Engineer | Structural • Architectural • </p>
-  <a href="https://drive.google.com/file/d/1ADgPhzKiJrmn0sKnu6HMtRODpLN3UKDp/view" target="_blank">Download Resume</a>
+  <p>BIM Engineer | Structural • Precast • Infrastructure</p>
+  <div class="portfolio-text">SEE PORTFOLIO</div>
 </header>
 
 <section>
   <h2>About Me</h2>
   <div class="card">
     <p>
-      A motivated and detail-oriented BIM Engineer with strong experience in Structural,
-      MEP, and Precast BIM Modeling. Skilled in creating accurate 3D BIM models,
-      construction-ready drawings, and coordinating with multidisciplinary teams to
-      deliver high-quality infrastructure, industrial, and building projects in
-      accordance with ISO 19650 standards.
+      Motivated and detail-oriented BIM Engineer with experience in Structural,
+      MEP, and Precast BIM modeling. Skilled in delivering accurate 3D BIM models,
+      coordinated drawings, and ISO 19650 compliant documentation for infrastructure
+      and building projects.
     </p>
   </div>
 </section>
@@ -114,7 +108,7 @@
   <h2>Software Skills</h2>
   <div class="card">
     <ul>
-      <li>Autodesk Revit</li>
+      <li>Autodesk Revit (Structure & BIM)</li>
       <li>AutoCAD</li>
       <li>Navisworks</li>
       <li>Tekla Structures</li>
@@ -133,11 +127,10 @@
     <strong>Revit Modeler – Precision Precast Solution, Pune</strong><br />
     September 2025 – Present
     <ul>
-      <li>Prepared detailed precast shop drawings with reinforcement and connection details.</li>
-      <li>Produced sections, elevations, and technical drawings based on design inputs.</li>
-      <li>Ensured compliance with codes, standards, and client requirements.</li>
-      <li>Maintained drawing accuracy through self-checks and quality control.</li>
-      <li>Coordinated with teams and clients for approvals and revisions.</li>
+      <li>Prepared precast shop drawings with reinforcement and connection details.</li>
+      <li>Produced sections, elevations, and technical drawings.</li>
+      <li>Ensured compliance with standards and client requirements.</li>
+      <li>Maintained drawing accuracy and version control.</li>
     </ul>
   </div>
 
@@ -145,11 +138,10 @@
     <strong>Senior Project Engineer – Noren Tech, Pune</strong><br />
     April 2024 – September 2025
     <ul>
-      <li>Managed detailed 3D BIM models for structural and MEP systems using Revit.</li>
-      <li>Prepared construction-ready 2D drawings derived from coordinated 3D models.</li>
+      <li>Managed structural and MEP BIM models using Revit.</li>
       <li>Performed clash detection and coordination using Navisworks.</li>
+      <li>Prepared construction-ready drawings from coordinated models.</li>
       <li>Worked on Jakarta Metro Line infrastructure project.</li>
-      <li>Used CDE workflows as per ISO 19650 standards.</li>
     </ul>
   </div>
 </section>
@@ -170,8 +162,8 @@
     <ul>
       <li>Structural and architectural BIM modeling</li>
       <li>Infrastructure BIM – Jakarta Metro Line</li>
-      <li>Clash detection, coordination, and constructability analysis</li>
-      <li>Common Data Environment and worksharing workflows</li>
+      <li>Clash detection, coordination & constructability analysis</li>
+      <li>Common Data Environment workflows</li>
     </ul>
   </div>
 </section>
@@ -185,7 +177,7 @@
 </section>
 
 <footer>
-  <p>© 2025 Vinayak Kadam | BIM Portfolio</p>
+  © 2025 Vinayak Kadam | BIM Portfolio
 </footer>
 
 </body>
