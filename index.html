@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vinayak Kadam | BIM Engineer</title>
+
   <style>
     body {
       margin: 0;
@@ -13,37 +14,39 @@
       line-height: 1.7;
     }
 
-    /* HEADER WITH BIM / CONSTRUCTION BACKGROUND */
+    /* ===== HEADER WITH BIM IMAGE ===== */
     header {
       background:
-       background:
-    linear-gradient(rgba(15,23,42,0.65), rgba(15,23,42,0.65)),
-    url('bim-header.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 35px 20px;
+        linear-gradient(rgba(15,23,42,0.65), rgba(15,23,42,0.65)),
+        url('bim-header.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 35px 20px; /* reduced block size */
+      text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 36px;
+      font-size: 36px; /* text size unchanged */
       letter-spacing: 1px;
     }
 
     header p {
-      margin-top: 12px;
-      font-size: 18px;
+      margin-top: 8px;
+      font-size: 18px; /* text size unchanged */
       color: #e5e7eb;
     }
 
     header a {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 18px;
       background: #38bdf8;
       color: #0f172a;
-      padding: 12px 22px;
+      padding: 10px 22px;
       border-radius: 30px;
       font-weight: bold;
+      text-decoration: none;
     }
 
     section {
@@ -60,21 +63,11 @@
     }
 
     .card {
-      background: rgba(255,255,255,0.95);
+      background: rgba(255, 255, 255, 0.95);
       padding: 28px;
       margin-top: 20px;
       border-radius: 16px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-    }
-
-    /* SECTION BACKGROUND IMAGES */
-    .bg-bim {
-      background:
-        linear-gradient(rgba(241,245,249,0.9), rgba(241,245,249,0.9)),
-        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
-      background-size: cover;
-      background-position: center;
-      padding: 40px 0;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     }
 
     ul {
@@ -84,11 +77,7 @@
     footer {
       text-align: center;
       padding: 30px;
-      background:
-        linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85)),
-        url('https://images.unsplash.com/photo-1503387762-592deb58ef4e');
-      background-size: cover;
-      background-position: center;
+      background: #0f172a;
       color: #e5e7eb;
       margin-top: 80px;
     }
@@ -97,20 +86,15 @@
       margin: 0;
       font-size: 14px;
     }
-
-    a {
-      text-decoration: none;
-    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Vinayak Madhukar Kadam</h1>
   <p>BIM Engineer | Structural • Precast • Infrastructure</p>
-  <p style="margin-top:15px;">
-    <a href="https://drive.google.com/file/d/1ADgPhzKiJrmn0sKnu6HMtRODpLN3UKDp/view" target="_blank" style="background:#2563eb;color:white;padding:10px 18px;border-radius:6px;">Download Resume</a>
-  </p>
+  <a href="https://drive.google.com/file/d/1ADgPhzKiJrmn0sKnu6HMtRODpLN3UKDp/view" target="_blank">Download Resume</a>
 </header>
 
 <section>
@@ -144,27 +128,28 @@
 
 <section>
   <h2>Professional Experience</h2>
+
   <div class="card">
-    <p><strong>Revit Modeler – Precision Precast Solution, Pune</strong><br />
-    September 2025 – Present</p>
+    <strong>Revit Modeler – Precision Precast Solution, Pune</strong><br />
+    September 2025 – Present
     <ul>
-      <li>Prepared detailed precast shop drawings including reinforcement and connection details.</li>
+      <li>Prepared detailed precast shop drawings with reinforcement and connection details.</li>
       <li>Produced sections, elevations, and technical drawings based on design inputs.</li>
-      <li>Ensured compliance with relevant codes, standards, and client requirements.</li>
+      <li>Ensured compliance with codes, standards, and client requirements.</li>
       <li>Maintained drawing accuracy through self-checks and quality control.</li>
-      <li>Coordinated with internal teams and clients for approvals and revisions.</li>
+      <li>Coordinated with teams and clients for approvals and revisions.</li>
     </ul>
   </div>
 
   <div class="card">
-    <p><strong>Senior Project Engineer – Noren Tech, Pune</strong><br />
-    April 2024 – September 2025</p>
+    <strong>Senior Project Engineer – Noren Tech, Pune</strong><br />
+    April 2024 – September 2025
     <ul>
-      <li>Managed detailed 3D BIM models for structural and MEP systems using Revit as per ISO 19650.</li>
+      <li>Managed detailed 3D BIM models for structural and MEP systems using Revit.</li>
       <li>Prepared construction-ready 2D drawings derived from coordinated 3D models.</li>
       <li>Performed clash detection and coordination using Navisworks.</li>
-      <li>Participated in model reviews and conceptual design planning.</li>
       <li>Worked on Jakarta Metro Line infrastructure project.</li>
+      <li>Used CDE workflows as per ISO 19650 standards.</li>
     </ul>
   </div>
 </section>
@@ -172,8 +157,8 @@
 <section>
   <h2>Education</h2>
   <div class="card">
-    <p><strong>Bachelor of Civil Engineering</strong><br />
-    JSPM Narhe Technical Campus, Pune (2020 – 2023)</p>
+    <strong>Bachelor of Civil Engineering</strong><br />
+    JSPM Narhe Technical Campus, Pune (2020 – 2023)
     <p><strong>Final Year Project:</strong> Developing Biofilter using Algae & Slaked Lime for Air Pollution Control</p>
   </div>
 </section>
@@ -181,12 +166,12 @@
 <section>
   <h2>Training</h2>
   <div class="card">
-    <p><strong>BIM Professional Trainee – Novatr</strong></p>
+    <strong>BIM Professional Trainee – Novatr</strong>
     <ul>
-      <li>Structural and architectural BIM modeling.</li>
-      <li>Infrastructure BIM for Jakarta Metro Line project.</li>
-      <li>Clash detection, coordination, and constructability analysis.</li>
-      <li>Common Data Environment and worksharing workflows.</li>
+      <li>Structural and architectural BIM modeling</li>
+      <li>Infrastructure BIM – Jakarta Metro Line</li>
+      <li>Clash detection, coordination, and constructability analysis</li>
+      <li>Common Data Environment and worksharing workflows</li>
     </ul>
   </div>
 </section>
@@ -196,7 +181,6 @@
   <div class="card">
     <p>📞 9370441367</p>
     <p>📧 vinayak.mk@outlook.com</p>
-    <p>🔗 <a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></p>
   </div>
 </section>
 
@@ -206,3 +190,4 @@
 
 </body>
 </html>
+
