@@ -6,7 +6,6 @@
   <title>Vinayak Kadam | BIM Engineer</title>
 
   <style>
-    /* ===== Reset & Body ===== */
     * { box-sizing: border-box; margin:0; padding:0; }
     body {
       font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
@@ -15,7 +14,6 @@
       line-height: 1.6;
     }
 
-    /* ===== HEADER ===== */
     header {
       width: 100%;
       background:
@@ -32,7 +30,7 @@
       margin: 0;
       font-size: 36px;
       letter-spacing: 1px;
-      color: #cbd5f5; /* Same color as BIM Engineer text */
+      color: #cbd5f5;
     }
 
     header p {
@@ -69,7 +67,6 @@
       color: #0f172a;
     }
 
-    /* ===== FLOATING BUTTONS ===== */
     .floating-buttons {
       position: fixed;
       top: 150px;
@@ -105,7 +102,6 @@
       color: #0f172a;
     }
 
-    /* ===== SECTIONS ===== */
     section {
       max-width: 1050px;
       margin: 50px auto;
@@ -127,16 +123,9 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
-    ul {
-      padding-left: 20px;
-      margin: 0;
-    }
+    ul { padding-left: 20px; margin: 0; }
 
-    img {
-      width: 100%;
-      margin-top: 12px;
-      border-radius: 10px;
-    }
+    img { width: 100%; margin-top: 12px; border-radius: 10px; }
 
     footer {
       text-align: center;
@@ -147,8 +136,26 @@
       font-size: 14px;
     }
 
-    @media(max-width:768px){
-      .floating-buttons { top: 120px; right: 10px; }
+    /* ===== FLEX LAYOUT FOR MID SECTION ===== */
+    .mid-section {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .left-col {
+      flex: 1 1 30%;
+      min-width: 250px;
+    }
+
+    .right-col {
+      flex: 1 1 70%;
+      min-width: 300px;
+    }
+
+    @media(max-width:900px){
+      .mid-section { flex-direction: column; }
+      .left-col, .right-col { flex: 1 1 100%; }
       header h1 { font-size: 28px; }
     }
   </style>
@@ -158,47 +165,84 @@
 
 <header id="top-header">
   <h1>Vinayak Madhukar Kadam</h1>
-  <p>BIM Engineer | Structural</p>
+  <p>BIM Engineer | Structural • Precast • Infrastructure</p>
   <div class="portfolio-text">
     <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view?usp=drive_link" target="_blank" class="portfolio-btn">SEE PORTFOLIO</a>
     <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank" class="portfolio-btn">SEE LINKEDIN</a>
   </div>
 </header>
 
-<!-- Floating buttons appear after scrolling past header -->
 <div class="floating-buttons" id="floating-buttons">
   <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view?usp=drive_link" target="_blank">SEE PORTFOLIO</a>
   <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">SEE LINKEDIN</a>
 </div>
 
-<section>
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      Motivated and detail-oriented BIM Engineer with experience in Structural,
-      MEP, and Precast BIM modeling. Skilled in delivering accurate 3D BIM models,
-      coordinated drawings, and ISO 19650 compliant documentation for infrastructure
-      and building projects.
-    </p>
+<!-- ===== MID SECTION FLEX ===== -->
+<section class="mid-section">
+  <!-- Left Column: Software Skills + Education -->
+  <div class="left-col">
+    <div class="card">
+      <h2>Software Skills</h2>
+      <ul>
+        <li>Autodesk Revit (Structure & BIM)</li>
+        <li>AutoCAD</li>
+        <li>Navisworks</li>
+        <li>Tekla Structures</li>
+        <li>BIM 360 / CDE</li>
+        <li>Civil 3D</li>
+        <li>STAAD Pro</li>
+        <li>Bluebeam Revu</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Education</h2>
+      <strong>Bachelor of Civil Engineering</strong><br />
+      JSPM Narhe Technical Campus, Pune (2020 – 2023)
+      <p><strong>Final Year Project:</strong> Developing Biofilter using Algae & Slaked Lime for Air Pollution Control</p>
+    </div>
+  </div>
+
+  <!-- Right Column: Professional Summary -->
+  <div class="right-col">
+    <div class="card">
+      <h2>Professional Summary</h2>
+      <p>
+        Motivated and detail-oriented BIM Engineer with experience in Structural,
+        MEP, and Precast BIM modeling. Skilled in delivering accurate 3D BIM models,
+        coordinated drawings, and ISO 19650 compliant documentation for infrastructure
+        and building projects.
+      </p>
+    </div>
   </div>
 </section>
 
+<!-- ===== PROJECTS ===== -->
 <section>
-  <h2>Software Skills</h2>
+  <h2>Projects</h2>
+
   <div class="card">
+    <strong>Jakarta Metro Line – Infrastructure BIM</strong>
+    <img src="project-jakarta.jpg" alt="Jakarta Metro BIM" />
     <ul>
-      <li>Autodesk Revit (Structure & BIM)</li>
-      <li>AutoCAD</li>
-      <li>Navisworks</li>
-      <li>Tekla Structures</li>
-      <li>BIM 360 / CDE</li>
-      <li>Civil 3D</li>
-      <li>STAAD Pro</li>
-      <li>Bluebeam Revu</li>
+      <li>Structural BIM modeling using Revit</li>
+      <li>Coordination with architectural & MEP models</li>
+      <li>Clash detection and issue resolution</li>
+      <li>LOD 300–400 models and drawings</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>Precast Building Project – Pune</strong>
+    <img src="project-precast.jpg" alt="Precast BIM Project" />
+    <ul>
+      <li>Precast element modeling and detailing</li>
+      <li>Shop drawings with reinforcement details</li>
+      <li>Coordination with site and design team</li>
     </ul>
   </div>
 </section>
 
+<!-- ===== EXPERIENCE ===== -->
 <section>
   <h2>Professional Experience</h2>
 
@@ -225,7 +269,7 @@
   </div>
 
   <div class="card">
-    <strong>Professional Trainee – Novatr (Jakarta Metro Line)</strong>
+    <strong>Professional Trainee – Novatr (Jakarta Metro Line – Infrastructure BIM)</strong>
     <ul>
       <li>Developed structural BIM models using Autodesk Revit.</li>
       <li>Coordinated architectural, structural, and MEP models.</li>
@@ -236,40 +280,7 @@
   </div>
 </section>
 
-<section>
-  <h2>Education</h2>
-  <div class="card">
-    <strong>Bachelor of Civil Engineering</strong><br />
-    JSPM Narhe Technical Campus, Pune (2020 – 2023)
-    <p><strong>Final Year Project:</strong> Developing Biofilter using Algae & Slaked Lime for Air Pollution Control</p>
-  </div>
-</section>
-
-<section>
-  <h2>Projects</h2>
-
-  <div class="card">
-    <strong>Jakarta Metro Line</strong>
-    <img src="project-jakarta.jpg" alt="Jakarta Metro BIM" />
-    <ul>
-      <li>Structural BIM modeling using Revit</li>
-      <li>Coordination with architectural & MEP models</li>
-      <li>Clash detection and issue resolution</li>
-      <li>LOD 300–400 models and drawings</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <strong>Precast Building Project – Pune</strong>
-    <img src="project-precast.jpg" alt="Precast BIM Project" />
-    <ul>
-      <li>Precast element modeling and detailing</li>
-      <li>Shop drawings with reinforcement details</li>
-      <li>Coordination with site and design team</li>
-    </ul>
-  </div>
-</section>
-
+<!-- ===== CONTACT ===== -->
 <section>
   <h2>Contact</h2>
   <div class="card">
