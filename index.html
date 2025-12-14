@@ -24,7 +24,7 @@
       url('./bim-header.jpg');
     background-size: cover;
     background-position: center;
-    padding: 60px 20px;
+    padding: 60px 20px 50px;
     text-align: center;
   }
 
@@ -40,6 +40,12 @@
     color: #cbd5f5;
   }
 
+  .contact-header {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #e5e7eb;
+  }
+
   .portfolio-text {
     margin-top: 16px;
     display: flex;
@@ -49,7 +55,7 @@
   }
 
   .portfolio-btn {
-    padding: 8px 18px;
+    padding: 8px 20px;
     border: 2px solid #93c5fd;
     border-radius: 8px;
     color: #93c5fd;
@@ -98,9 +104,9 @@
   }
 
   section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    max-width: 1400px; /* wider layout */
+    margin: 45px auto;
+    padding: 0 24px;
   }
 
   h2 {
@@ -112,7 +118,7 @@
 
   .card {
     background: #ffffff;
-    padding: 24px;
+    padding: 26px;
     border-radius: 14px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     margin-top: 12px;
@@ -123,11 +129,11 @@
     margin: 0;
   }
 
-  /* ===== MAIN TWO COLUMN LAYOUT ===== */
+  /* ===== MAIN GRID ===== */
   .content-grid {
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    gap: 30px;
+    grid-template-columns: 1fr 2.6fr;
+    gap: 32px;
     align-items: start;
   }
 
@@ -162,6 +168,11 @@
 <header id="topHeader">
   <h1>Vinayak Madhukar Kadam</h1>
   <p>BIM Engineer | Structural • Precast • Infrastructure</p>
+
+  <div class="contact-header">
+    📞 9370441367 &nbsp; | &nbsp; 📧 vinayak.mk@outlook.com
+  </div>
+
   <div class="portfolio-text">
     <a href="https://drive.google.com/file/d/1t_0I5vWDKq7X9x3N2NxLvHsoaIbY11wi/view" target="_blank" class="portfolio-btn">SEE PORTFOLIO</a>
     <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank" class="portfolio-btn">SEE LINKEDIN</a>
@@ -173,7 +184,7 @@
   <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">SEE LINKEDIN</a>
 </div>
 
-<!-- LEFT + RIGHT MAIN CONTENT -->
+<!-- LEFT + RIGHT CONTENT -->
 <section class="content-grid">
 
   <!-- LEFT 1/3 -->
@@ -198,16 +209,9 @@
       JSPM Narhe Technical Campus, Pune (2020 – 2023)
       <p><strong>Final Year Project:</strong> Developing Biofilter using Algae & Slaked Lime for Air Pollution Control</p>
     </div>
-
-    <div class="card">
-      <h2>Contact</h2>
-      <p>📞 9370441367</p>
-      <p>📧 vinayak.mk@outlook.com</p>
-      <p>🔗 <a href="https://www.linkedin.com/in/vinayakkadam26" target="_blank">LinkedIn Profile</a></p>
-    </div>
   </div>
 
-  <!-- RIGHT 3/4 : PROFESSIONAL EXPERIENCE -->
+  <!-- RIGHT 3/4 -->
   <div>
     <div class="card">
       <h2>Professional Experience</h2>
@@ -253,7 +257,7 @@
 
   <div class="card">
     <strong>Jakarta Metro Line – Infrastructure BIM</strong>
-    <img src="./project-jakarta.jpg" alt="Jakarta Metro BIM">
+    <img src="./project-jakarta.jpg">
     <ul>
       <li>Structural BIM modeling using Revit</li>
       <li>Coordination with architectural & MEP models</li>
@@ -264,7 +268,7 @@
 
   <div class="card">
     <strong>Precast Building Project – Pune</strong>
-    <img src="./project-precast.jpg" alt="Precast BIM Project">
+    <img src="./project-precast.jpg">
     <ul>
       <li>Precast element modeling and detailing</li>
       <li>Shop drawings with reinforcement details</li>
